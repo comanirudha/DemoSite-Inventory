@@ -10,7 +10,7 @@
     <name>ecommerce</name>
     <url>http://www.blc-archetype.com</url>
     <properties>
-        <blc.version>2.2.0-SNAPSHOT</blc.version>
+        <blc.version>2.3.0-SNAPSHOT</blc.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
     </properties>
@@ -27,8 +27,7 @@
             <plugins>
                 <plugin>
                     <!-- Needed for Eclipse Indigo -->
-                    <!-- This plugin does not actually exist, but is instead read by Eclipse 
-                        for configuration purposes -->
+                    <!-- This plugin does not actually exist, but is instead read by Eclipse for configuration purposes -->
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
                     <version>1.0.0</version>
@@ -150,8 +149,7 @@
                     <configuration>
                         <excludeDefaultDirectories>true</excludeDefaultDirectories>
                         <filesets>
-                            <!-- delete directories that will be generated when you start the 
-                                develpment server/client in eclipse -->
+                            <!-- delete directories that will be generated when you start the develpment server/client in eclipse -->
                             <fileset>
                                 <directory>target</directory>
                                 <includes>
@@ -178,9 +176,9 @@
             <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-inventory</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.1.0-SNAPSHOT</version>
             </dependency>
-            <!--Broadleaf core libraries -->
+            <!--Broadleaf libraries -->
             <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-common</artifactId>
@@ -274,13 +272,6 @@
                 <version>5.9</version>
                 <type>jar</type>
                 <classifier>jdk15</classifier>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>3.1.0.RELEASE</version>
-                <type>jar</type>
                 <scope>test</scope>
             </dependency>
             <dependency>
